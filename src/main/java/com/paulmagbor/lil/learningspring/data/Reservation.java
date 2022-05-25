@@ -63,7 +63,5 @@ public class Reservation {
     public String toString() {
         return "Reservation [date=" + date + ", guestId=" + guestId + ", reservationId=" + reservationId + ", roomId="
                 + roomId + "]";
-    }
-
-    
+    }   
 }
