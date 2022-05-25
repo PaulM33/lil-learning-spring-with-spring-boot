@@ -23,8 +23,8 @@ public class Reservation {
     @Column(name = "GUEST_ID")
     private long guestId;
 
-    @Column(name = "DATE")
-    private Date date;
+    @Column(name = "RES_DATE")
+    private Date reservationDate;
 
     // getters and setters
     public long getReservationId() {
@@ -52,16 +52,16 @@ public class Reservation {
     }
 
     public Date getDate() {
-        return date;
+        return reservationDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(Date reservationDate) {
+        this.reservationDate = reservationDate;
     }
 
     @Override
     public String toString() {
-        return "Reservation [date=" + date + ", guestId=" + guestId + ", reservationId=" + reservationId + ", roomId="
+        return "Reservation [date=" + reservationDate + ", guestId=" + guestId + ", reservationId=" + reservationId + ", roomId="
                 + roomId + "]";
     }   
 }
