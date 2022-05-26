@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name="GUEST")
 public class Guest {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // cannot be AUTO if using other methods than GET
     @Column(name = "GUEST_ID")
     private long guestId;
 
